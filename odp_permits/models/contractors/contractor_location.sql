@@ -10,7 +10,7 @@ WITH inner_table AS(
         contractorzip,
         contractorstate
     FROM
-        {{ref("permits")}}
+        {{ref("fct_permits")}}
     GROUP BY
         contractorname,
         contractoraddress1,
