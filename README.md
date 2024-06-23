@@ -10,7 +10,7 @@ DuckDB v1.0.0 was released in June 2024.
 
 ## Overview:
 1) Data is downloaded via API call in the dev.ipynb notebook, and saved to data/raw -- these are considered raw.
-  - Note: the geojson file for census tract geometries is currently being imported manually.
+    - Note: the geojson file for census tract geometries is currently being imported manually.
 2) Downloaded -- raw -- data is validated through a pandera schema.
 3) With DBT, Saved -- raw -- data is imported from data/raw to the import schema, these are considered staged.
 4) With DBT, staged data are transformed into metrics and exploratory data.
