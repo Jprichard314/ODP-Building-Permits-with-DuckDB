@@ -2,7 +2,7 @@ with inner_table as (
     select
         censustract,
         count(*) PERMITS_ISSUED
-    from import.PERMITS
+    from {{ref("permits")}}
     GROUP BY
         censustract
 )
